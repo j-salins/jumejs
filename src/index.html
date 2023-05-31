@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="bg-pr-green">
+<html class="bg-pr-dark-green">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -78,7 +78,7 @@
     </nav>
     <main>
       <div
-        class="relative pt-16 pb-32 flex content-center items-center justify-center"
+        class="relative pt-16 pb-32 flex content-center items-center justify-center h-4/5"
         style="min-height: 75vh;"
       >
         <div
@@ -87,18 +87,18 @@
         >
           <span
             id="blackOverlay"
-            class="w-full h-full absolute opacity-50 bg-black"
+            class="w-full h-full absolute opacity-30 bg-black"
           ></span>
         </div>
         <div class="container relative mx-auto">
           <div class="items-center flex flex-wrap">
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-              <div class="pr-12">
-                <h1 class="text-7xl font-serif">
+              <div class="md:pr-12">
+                <h1 class="text-5xl md:text-7xl font-serif">
                   Grow Rich
                 </h1>
-                <p class="mt-4 text-2xl font-serif">
-                  Money grows on trees - if the peat is right.
+                <p class="mt-4 text-lg md:text-2xl font-serif">
+                  Money grows on trees - <br class="md:hidden"/> if the peat is right.
                 </p>
               </div>
             </div>
@@ -106,26 +106,7 @@
         </div>
       </div>
 
-      <section class="relative pt-20 pb-48">
-        <div
-        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-        style="height: 80px;"
-      >
-        <svg
-          class="absolute bottom-0 overflow-hidden"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          version="1.1"
-          viewBox="0 0 2560 100"
-          x="0"
-          y="0"
-        >
-          <polygon
-            class="text-white fill-pr-green"
-            points="2560 0 2560 100 0 100"
-          ></polygon>
-        </svg>
-      </div>
+      <section class="relative pt-20">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap justify-center text-center mb-24">
             <div class="w-full lg:w-6/12 px-4">
@@ -136,26 +117,27 @@
             </div>
           </div>
           <div class="flex flex-wrap">
-            <img src="./assets/body_work_bg.svg" alt="">
+            <img src="./assets/body_work_bg.svg" class="w-full object-cover" alt="">
           </div>
         </div>
       </section>
 
-      <section class="relative py-20">
-        <div class="container mx-auto px-4 md:px-12">
+      <section class="relative py-10">
+        <div class="container mx-auto px-4">
           <div class="items-center flex flex-wrap">
-             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
-              <div class="md:pl-12">
-                <h3 class="text-3xl font-serif">Proffesional</h3>
-                <p class="mt-4 w-2/3 text-lg leading-relaxed font-serif">
+             <div class="w-full md:w-6/12 ml-auto mr-auto px-4 flex justify-center order-2 md:order-1">
+              <div class="w-10/12 md:w-6/12">
+                <h3 class="text-3xl font-serif hidden md:block">Proffesional</h3>
+                <p class="mt-4 text-lg leading-relaxed font-serif text-center md:text-left">
                   Large-scale farming operations, with a focuson maximising efficiency. Uses advanced technology and to optimise their crop yields.
                 </p>
               </div>
             </div>
-            <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+            <div class="w-full md:w-6/12 ml-auto mr-auto order-1 md:order-2">
+              <h3 class="text-3xl font-serif text-center pb-10 md:hidden">Proffesional</h3>
               <img
                 alt="..."
-                class="max-w-full rounded-lg shadow-lg"
+                class="max-w-full"
                 src="./assets/proffesional.jpg"
               />
             </div>
@@ -163,15 +145,15 @@
         </div>
         <div class="container mx-auto px-4 mt-12">
           <div class="items-center flex flex-wrap">
-            <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+            <div class="w-full md:w-6/12 ml-auto mr-auto">
               <img
                 alt="..."
-                class="max-w-full rounded-lg shadow-lg"
+                class="max-w-full"
                 src="./assets/hobby.jpg"
               />
             </div>
-            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
-              <div class="md:pr-12">
+            <div class="w-full md:w-6/12 ml-auto mr-auto px-4 flex justify-center">
+              <div class="md:w-6/12">
                 <h3 class="text-3xl font-serif">Hobby</h3>
                 <p class="mt-4 text-lg leading-relaxed font-serif">
                   Ideal peat product for
@@ -183,12 +165,12 @@ productivity of their plants.
           </div>
         </div>
       </section>
-      <section class="pt-20 pb-48">
+      <section class="pt-20 pb-20">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap justify-center text-center mb-24">
             <div class="w-full lg:w-6/12 px-4">
-              <h2 class="text-4xl">What is saved that is earned</h2>
-              <p class="text-lg leading-relaxed m-4">
+              <h2 class="text-4xl font-serif">What is saved that is earned</h2>
+              <p class="text-lg leading-relaxed m-4 font-serif">
                 Our end goal is that you grow richer  through better harvest. 
                 We understand your priorities, which is why we offer a streamlined process from peat production land to your farm.              </p>
             </div>
@@ -253,141 +235,53 @@ products that wont' tbreak the bank.
           </div>
         </div>
       </section>
-      <section class="pb-20 relative block bg-pr-dark-green">
-        <div
-          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-          style="height: 80px;"
-        >
-          <svg
-            class="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-          >
-            <polygon
-              class=" fill-pr-dark-green"
-              points="2560 0 2560 100 0 100"
-            ></polygon>
-          </svg>
-        </div>
-        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
-
-        </div>
-      </section>
-      <section id="contact-us" class="relative block py-24 lg:pt-0 bg-pr-dark-green">
+      <section id="contact-us" class="relative block py-20 bg-pr-dark-green">
         <div class="container mx-auto px-4">
-          <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+          <div class="flex flex-wrap justify-center">
             <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-4xl font-serif text-center mb-8">Let’s get in touch</h2>
               <div
-                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg border-solid border-2 border-pr-green-accent"
+                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-xl border-solid border border-pr-green-accent"
               >
                 <div class="flex-auto p-5 lg:p-10">
-                  <h4 class="text-2xl">Want to work with us?</h4>
-                  <div class="relative w-full mb-3 mt-8">
-                    <label
-                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                      for="full-name"
-                      >Full Name</label
-                    ><input
-                      type="text"
-                      class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                      placeholder="Full Name"
-                      style="transition: all 0.15s ease 0s;"
-                    />
-                  </div>
+
                   <div class="relative w-full mb-3">
-                    <label
-                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                      for="email"
-                      >Email</label
-                    ><input
+                    <input
                       type="email"
-                      class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                      class="border-0 px-3 py-3 placeholder-white placeholder-opacity-25 text-pr-beige bg-transparent text-sm focus:outline-none focus:ring-opacity-0 w-full"
                       placeholder="Email"
                       style="transition: all 0.15s ease 0s;"
                     />
                   </div>
                   <div class="relative w-full mb-3">
-                    <label
-                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                      for="message"
-                      >Message</label
-                    ><textarea
+                    <textarea
                       rows="4"
                       cols="80"
-                      class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                      class="px-3 py-3 border-0 border-t border-solid border border-pr-green-accent placeholder-white placeholder-opacity-25 text-pr-beige bg-transparent text-sm focus:outline-none focus:ring-opacity-0 w-full"
                       placeholder="Type a message..."
                     ></textarea>
                   </div>
-                  <div class="text-center mt-6">
-                    <button
-                      class="text-pr-green-accent active:bg-pr-green-accent text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none border-2 border-solid border-pr-green-accent focus:outline-none mr-1 mb-1"
-                      type="button"
-                      style="transition: all 0.15s ease 0s;"
-                    >
-                      Send Message
-                    </button>
-                  </div>
                 </div>
+              </div>
+              <div class="text-center mt-6">
+                <button
+                  class="text-pr-green-accent active:bg-pr-green-accent text-sm font-bold px-20 py-3 rounded-xl hover:shadow-lg outline-none border border-solid border-pr-green-accent focus:outline-none focus:ring-opacity-0 mr-1 mb-1"
+                  type="button"
+                  style="transition: all 0.15s ease 0s;"
+                >
+                  Send
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="relative bg-gray-300 pt-8 pb-6">
-      <div
-        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-        style="height: 80px;"
-      >
-        <svg
-          class="absolute bottom-0 overflow-hidden"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          version="1.1"
-          viewBox="0 0 2560 100"
-          x="0"
-          y="0"
-        >
-          <polygon
-            class="text-gray-300 fill-current"
-            points="2560 0 2560 100 0 100"
-          ></polygon>
-        </svg>
-      </div>
+    <footer class="relative bg-pr-beige pt-8 pb-6">
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap">
           <div class="w-full lg:w-6/12 px-4">
-            <h4 class="text-3xl">Let's keep in touch!</h4>
-            <h5 class="text-lg mt-0 mb-2 text-gray-700">
-              Find us on any of these platforms, we respond 1-2 business days.
-            </h5>
-            <div class="mt-6">
-              <button
-                class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i class="flex fab fa-twitter"></i></button
-              ><button
-                class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i class="flex fab fa-facebook-square"></i></button
-              ><button
-                class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i class="flex fab fa-dribbble"></i></button
-              ><button
-                class="bg-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i class="flex fab fa-github"></i>
-              </button>
-            </div>
+            <img src="./assets/prosper_logo_footer.svg" class="opacity-20" alt="">
           </div>
           <div class="w-full lg:w-6/12 px-4">
             <div class="flex flex-wrap items-top mb-6">
@@ -472,12 +366,7 @@ products that wont' tbreak the bank.
         >
           <div class="w-full md:w-4/12 px-4 mx-auto text-center">
             <div class="text-sm text-gray-600 py-1">
-              Copyright © 2019 Tailwind Starter Kit by
-              <a
-                href="https://www.creative-tim.com"
-                class="text-gray-600 hover:text-gray-900"
-                >Creative Tim</a
-              >.
+              Copyright © 2023 Prosper
             </div>
           </div>
         </div>

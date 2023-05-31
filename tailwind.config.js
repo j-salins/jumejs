@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+				sofia_regular: ['SofiaProRegular'],
+			},
       colors: {
         'pr-green': '#002B2C',
         'pr-dark-green': '#002425',

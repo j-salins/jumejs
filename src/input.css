@@ -3,3 +3,19 @@
 @tailwind utilities;
 
 
+@font-face {
+  font-family: "StixGeneral";
+  src: url('/assets/STIXGeneral-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SofiaProRegular";
+  src: url('/assets/SofiaProRegular.woff') format('woff');
+}
+
+@layer base {
+  html {
+    font-family: SofiaProRegular, system-ui, serif;
+  }
+}
+

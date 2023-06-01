@@ -671,6 +671,14 @@ html {
   margin-top: 2rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -693,6 +701,10 @@ html {
 
 .h-full {
   height: 100%;
+}
+
+.h-20 {
+  height: 5rem;
 }
 
 .w-10\/12 {
@@ -739,6 +751,10 @@ html {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
 }
 
 .list-none {
@@ -1065,6 +1081,21 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-red-200 {
+  --tw-text-opacity: 1;
+  color: rgb(254 202 202 / var(--tw-text-opacity));
+}
+
+.text-red-900 {
+  --tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity));
+}
+
+.text-red-600 {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1098,6 +1129,10 @@ html {
 
 .opacity-30 {
   opacity: 0.3;
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .shadow-lg {
@@ -1151,6 +1186,18 @@ html {
   background-color: rgb(151 209 0 / var(--tw-bg-opacity));
 }
 
+.disabled\:opacity-75:disabled {
+  opacity: 0.75;
+}
+
+.disabled\:opacity-5:disabled {
+  opacity: 0.05;
+}
+
+.disabled\:opacity-50:disabled {
+  opacity: 0.5;
+}
+
 @media (min-width: 768px) {
   .md\:order-1 {
     order: 1;
@@ -1170,14 +1217,6 @@ html {
 
   .md\:mr-12 {
     margin-right: 3rem;
-  }
-
-  .md\:mt-2 {
-    margin-top: 0.5rem;
-  }
-
-  .md\:mt-4 {
-    margin-top: 1rem;
   }
 
   .md\:mt-8 {

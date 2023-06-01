@@ -85,8 +85,8 @@
     </nav>
     <main>
       <div
-      class="relative pt-16 pb-32 flex content-center items-center justify-center h-5/6 animate-fade-in"
-      style="min-height: 75vh;"
+        class="relative pt-16 pb-32 flex content-center items-center justify-center h-5/6 animate-fade-in"
+        style="min-height: 75vh;"
       >
         <div
           class="absolute top-0 w-full h-full bg-center bg-no-repeat bg-cover bg-[url('./assets/hero_bg_mobile.jpg')] md:bg-[url('./assets/hero_bg.jpg')]"        >
@@ -243,6 +243,9 @@ products that wont' tbreak the bank.
           <div class="flex flex-wrap justify-center">
             <div class="w-full lg:w-7/12 px-2">
               <h2 class="text-2xl md:text-3xl font-serif text-center mb-8">Let’s get in touch</h2>
+              
+              <form id="prosper-form" action="https://formspree.io/f/xrgvwggg" method="POST">
+
               <div
                 class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-xl border-solid border border-pr-green-accent"
               >
@@ -251,6 +254,8 @@ products that wont' tbreak the bank.
                   <div class="relative w-full mb-3">
                     <input
                       type="email"
+                      id="email"
+                      name="email"
                       class="border-0 px-3 py-3 placeholder-white placeholder-opacity-25 text-pr-beige bg-transparent text-sm focus:outline-none focus:ring-opacity-0 w-full"
                       placeholder="example@email.com"
                       style="transition: all 0.15s ease 0s;"
@@ -258,6 +263,8 @@ products that wont' tbreak the bank.
                   </div>
                   <div class="relative w-full mb-3">
                     <textarea
+                    id="message"
+                    name="message"
                       rows="8"
                       cols="80"
                       class="px-3 py-3 border-0 border-t border-solid border border-pr-green-accent placeholder-white placeholder-opacity-25 text-pr-beige bg-transparent text-sm focus:outline-none focus:ring-opacity-0 w-full"
@@ -267,14 +274,19 @@ products that wont' tbreak the bank.
                 </div>
               </div>
               <div class="text-center mt-6">
-                <button
+                <input type="submit" value="Send" ref="submit"
                   class="text-pr-green-accent active:bg-pr-green-accent text-sm font-bold px-20 py-3 rounded-xl hover:shadow-lg outline-none border border-solid border-pr-green-accent focus:outline-none focus:ring-opacity-0 mr-1 mb-1"
                   type="button"
                   style="transition: all 0.15s ease 0s;"
                 >
-                  Send
-                </button>
+
               </div>
+
+              </form>
+
+              <p id="my-form-status" class="text-lg text-pr-beige w-full text-center h-20 mt-10"></p>
+
+
             </div>
           </div>
         </div>
@@ -366,5 +378,60 @@ products that wont' tbreak the bank.
       document.getElementById(collapseID).classList.toggle("hidden");
       document.getElementById(collapseID).classList.toggle("block");
     }
+
+    document.addEventListener("DOMContentLoaded", function (e) {
+
+
+      var form = document.getElementById("prosper-form");
+
+form.addEventListener("submit", handleSubmit);
+
+
+
+async function handleSubmit(event) {
+
+  console.log(form);
+
+
+  event.preventDefault();
+  var status = document.getElementById("my-form-status");
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+        'Accept': 'application/json'
+    }
+  }).then(response => {
+    if (response.ok) {
+      status.innerHTML = "Paldies, jūsu pieteikums ir saņemts!";
+      status.classList.add('animate-fade-in');
+      status.classList.add('text-pr-green-accent');
+      form.reset()
+    } else {
+      response.json().then(data => {
+        if (Object.hasOwn(data, 'errors')) {
+          status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+          status.classList.add('animate-fade-in');
+          status.classList.add('text-red-600');
+
+
+        } else {
+          status.innerHTML = "Hmm.. Nezdevās nosūtīt ziņu, mēģiniet nosūtīt vēlreiz."
+          status.classList.add('animate-fade-in');
+          status.classList.add('text-red-600');
+        }
+      })
+    }
+  }).catch(error => {
+    status.innerHTML = "Hmm.. Nezdevās nosūtīt ziņu, mēģiniet nosūtīt vēlreiz."
+    status.classList.add('animate-fade-in');
+    status.classList.add('text-red-600');
+
+
+  });
+}
+    });
+
   </script>
 </html>

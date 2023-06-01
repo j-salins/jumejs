@@ -675,6 +675,10 @@ html {
   margin-top: 2rem;
 }
 
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
 .block {
   display: block;
 }
@@ -709,6 +713,10 @@ html {
 
 .w-full {
   width: 100%;
+}
+
+.w-8\/12 {
+  width: 66.666667%;
 }
 
 .min-w-0 {
@@ -1203,6 +1211,14 @@ html {
 
   .md\:w-6\/12 {
     width: 50%;
+  }
+
+  .md\:w-5\/12 {
+    width: 41.666667%;
+  }
+
+  .md\:w-8\/12 {
+    width: 66.666667%;
   }
 
   .md\:justify-between {

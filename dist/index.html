@@ -253,7 +253,7 @@ products that wont' tbreak the bank.
                 <div class="flex-auto p-5 lg:p-10">
 
                   <div class="relative w-full mb-3">
-                    <input required
+                    <input 
                       type="email"
                       id="email"
                       name="email"
@@ -264,6 +264,7 @@ products that wont' tbreak the bank.
                   </div>
                   <div class="relative w-full mb-3">
                     <textarea
+                    required
                     id="message"
                     name="message"
                       rows="8"
@@ -394,7 +395,7 @@ products that wont' tbreak the bank.
 
       ScrollReveal().reveal('#prosper-form', {
         duration: 900,
-        delay: 700
+        delay: 400
       });
 
 
@@ -405,9 +406,10 @@ async function handleSubmit(event) {
 
 
   event.preventDefault();
-  var btn = document.getElementsByClassName('button-submit');
+  var btn = document.querySelector('.button-submit');
   console.log(btn);
-  btn.value = "Sending..";
+  btn.setAttribute("value", "Sending..");
+  btn.setAttribute("disabled", "true");
   var status = document.getElementById("my-form-status");
   var data = new FormData(event.target);
   fetch(event.target.action, {
@@ -421,23 +423,21 @@ async function handleSubmit(event) {
       status.innerHTML = "Thank you, your message has been registered!";
       status.classList.add('animate-fade-in');
       status.classList.add('text-pr-green-accent');
-      btn.value = "Send";
+      btn.setAttribute("value", "Send");
+      btn.setAttribute("disabled", "false");
+
       form.reset()
     } else {
       response.json().then(data => {
         if (Object.hasOwn(data, 'errors')) {
           status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-          status.classList.add('animate-fade-in');
-          status.classList.add('text-red-600');
-          btn.value = "Send";
-
-
         } else {
           status.innerHTML = "There has been a error in the request. Please, try again."
-          status.classList.add('animate-fade-in');
-          status.classList.add('text-red-600');
-          btn.value = "Send";
         }
+        status.classList.add('animate-fade-in');
+          status.classList.add('text-red-600');
+          btn.setAttribute("value", "Send");
+          btn.setAttribute("disabled", "false");
       })
     }
   }).catch(error => {
@@ -445,8 +445,7 @@ async function handleSubmit(event) {
     status.classList.add('animate-fade-in');
     status.classList.add('text-red-600');
     btn.value = "Send";
-
-
+    btn.setAttribute("disabled", "false");
   });
 }
     });

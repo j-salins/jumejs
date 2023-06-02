@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <link
       rel="apple-touch-icon"
       sizes="76x76"
@@ -179,7 +180,7 @@
             </div>
           </div>
           <div class="flex flex-wrap justify-center">
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-20 md:mb-12 px-4">
+            <div class="feature w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-20 md:mb-12 px-4">
               <div class="px-10">
                 <img
                   alt="..."
@@ -198,7 +199,7 @@ of to your farm.
                 </div>
               </div>
             </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-20 md:mb-12 px-4">
+            <div class="feature w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-20 md:mb-12 px-4">
               <div class="px-10">
                 <img
                   alt="..."
@@ -217,7 +218,7 @@ market with no middle man.
                 </div>
               </div>
             </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-20 md:mb-12 px-4">
+            <div class="feature w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-20 md:mb-12 px-4">
               <div class="px-10">
                 <img
                   alt="..."
@@ -383,8 +384,18 @@ products that wont' tbreak the bank.
 
 
       var form = document.getElementById("prosper-form");
+      
+      form.addEventListener("submit", handleSubmit);
 
-form.addEventListener("submit", handleSubmit);
+      ScrollReveal().reveal('.feature', {
+        duration: 900,
+        delay: 400
+      });
+
+      ScrollReveal().reveal('#prosper-form', {
+        duration: 900,
+        delay: 700
+      });
 
 
 
@@ -434,4 +445,5 @@ async function handleSubmit(event) {
     });
 
   </script>
+  
 </html>

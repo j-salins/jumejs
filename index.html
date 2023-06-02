@@ -178,7 +178,7 @@
                 We understand your priorities, which is why we offer a streamlined process from peat production land to your farm.              </p>
             </div>
           </div>
-          <div class="flex flex-wrap justify-center py-20">
+          <div class="flex flex-wrap justify-center">
             <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-20 md:mb-12 px-4">
               <div class="px-10">
                 <img
@@ -252,7 +252,7 @@ products that wont' tbreak the bank.
                 <div class="flex-auto p-5 lg:p-10">
 
                   <div class="relative w-full mb-3">
-                    <input
+                    <input required
                       type="email"
                       id="email"
                       name="email"
@@ -268,13 +268,13 @@ products that wont' tbreak the bank.
                       rows="8"
                       cols="80"
                       class="px-3 py-3 border-0 border-t border-solid border border-pr-green-accent placeholder-white placeholder-opacity-25 text-pr-beige bg-transparent text-sm focus:outline-none focus:ring-opacity-0 w-full"
-                      placeholder="Hello, I am interesten in prospering."
+                      placeholder="Hello, I am interested in prospering."
                     ></textarea>
                   </div>
                 </div>
               </div>
               <div class="text-center mt-6">
-                <input type="submit" value="Send" ref="submit"
+                <input required type="submit" value="Send" ref="submit"
                   class="text-pr-green-accent active:bg-pr-green-accent text-sm font-bold px-20 py-3 rounded-xl hover:shadow-lg outline-none border border-solid border-pr-green-accent focus:outline-none focus:ring-opacity-0 mr-1 mb-1"
                   type="button"
                   style="transition: all 0.15s ease 0s;"
@@ -315,7 +315,7 @@ products that wont' tbreak the bank.
                   <li>
                     <a
                       class="text-gray-700 hover block pb-2 text-sm"
-                      href="https://blog.creative-tim.com"
+                      href="mailto:ar@prosperpeat.com"
                       >ar@prosperpeat.com</a
                     >
                   </li>
@@ -404,7 +404,7 @@ async function handleSubmit(event) {
     }
   }).then(response => {
     if (response.ok) {
-      status.innerHTML = "Paldies, jūsu pieteikums ir saņemts!";
+      status.innerHTML = "Thank you, your message has been registered!";
       status.classList.add('animate-fade-in');
       status.classList.add('text-pr-green-accent');
       form.reset()
@@ -417,7 +417,7 @@ async function handleSubmit(event) {
 
 
         } else {
-          status.innerHTML = "Hmm.. Nezdevās nosūtīt ziņu, mēģiniet nosūtīt vēlreiz."
+          status.innerHTML = "There has been a error in the request. Please, try again."
           status.classList.add('animate-fade-in');
           status.classList.add('text-red-600');
         }

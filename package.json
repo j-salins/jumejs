@@ -1,0 +1,17 @@
+{
+  "name": "prosper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy": "cp -r ./src/index.html  ./dist && cp -r ./src/assets ./dist",
+    "deploy": "gh-pages -d dist"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}

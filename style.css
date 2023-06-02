@@ -1229,6 +1229,10 @@ html {
     width: 66.666667%;
   }
 
+  .md\:justify-end {
+    justify-content: flex-end;
+  }
+
   .md\:justify-between {
     justify-content: space-between;
   }

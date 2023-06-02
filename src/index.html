@@ -129,9 +129,9 @@
       </section>
 
       <section class="relative py-10">
-        <div class="container mx-auto px-4">
+        <div class="proffesional container mx-auto px-4">
           <div class="items-center flex flex-wrap">
-             <div class="w-full md:w-5/12 ml-auto mr-auto px-4 flex justify-center order-2 md:order-1">
+             <div class="w-full md:w-5/12 ml-auto px-4 flex justify-center order-2 md:order-1">
               <div class=" w-10/12 md:w-8/12">
                 <h3 class="text-3xl md:text-5xl font-serif hidden md:block">Professional</h3>
                 <p class="mt-6 md:text-2xl leading-relaxed font-serif text-center md:text-left">
@@ -139,7 +139,7 @@
                 </p>
               </div>
             </div>
-            <div class="w-full md:w-5/12 ml-auto mr-auto order-1 md:order-2">
+            <div class="w-full md:w-5/12 ml-auto order-1 md:order-2">
               <h3 class="text-3xl font-serif text-center pb-10 md:hidden">Proffesional</h3>
               <img
                 alt="..."
@@ -149,9 +149,9 @@
             </div>
           </div>
         </div>
-        <div class="container mx-auto px-4 mt-20 md:mt-8">
+        <div class="hobby container mx-auto px-4 mt-20 md:mt-8">
           <div class="items-center flex flex-wrap">
-            <div class="w-full md:w-5/12 ml-auto mr-auto">
+            <div class="w-full md:w-5/12 mr-auto">
               <h3 class="text-3xl font-serif text-center pb-10 md:hidden">Hobby</h3>
               <img
                 alt="..."
@@ -257,7 +257,7 @@ products that won't tbreak the bank.
                       type="email"
                       id="email"
                       name="email"
-                      class="border-0 px-3 py-3 placeholder-white placeholder-opacity-25 text-pr-beige bg-transparent text-sm focus:outline-none focus:ring-opacity-0 w-full"
+                      class="border-0 px-3 py-3 placeholder-white placeholder-opacity-25 text-pr-beige bg-transparent focus:outline-none focus:ring-opacity-0 w-full"
                       placeholder="example@email.com"
                       style="transition: all 0.15s ease 0s;"
                     />
@@ -269,7 +269,7 @@ products that won't tbreak the bank.
                     name="message"
                       rows="8"
                       cols="80"
-                      class="px-3 py-3 border-0 border-t border-solid border border-pr-green-accent placeholder-white placeholder-opacity-25 text-pr-beige bg-transparent text-sm focus:outline-none focus:ring-opacity-0 w-full"
+                      class="px-3 py-3 border-0 border-t border-solid border border-pr-green-accent placeholder-white placeholder-opacity-25 text-pr-beige bg-transparent focus:outline-none focus:ring-opacity-0 w-full"
                       placeholder="Hello, I am interested in prospering."
                     ></textarea>
                   </div>
@@ -277,7 +277,7 @@ products that won't tbreak the bank.
               </div>
               <div class="text-center mt-6">
                 <input required type="submit" value="Send" ref="submit"
-                  class="button-submit text-pr-green-accent active:bg-pr-green-accent text-sm font-bold w-48 py-3 rounded-xl hover:shadow-lg outline-none border border-solid border-pr-green-accent focus:outline-none focus:ring-opacity-0 mr-1 mb-1"
+                  class="button-submit text-pr-green-accent active:bg-pr-green-accent font-bold w-48 py-3 rounded-xl hover:shadow-lg outline-none border border-solid border-pr-green-accent focus:outline-none focus:ring-opacity-0 mr-1 mb-1"
                   type="button"
                   style="transition: all 0.15s ease 0s;"
                 >
@@ -383,22 +383,29 @@ products that won't tbreak the bank.
 
     document.addEventListener("DOMContentLoaded", function (e) {
 
-
       var form = document.getElementById("prosper-form");
       
       form.addEventListener("submit", handleSubmit);
 
+      ScrollReveal().reveal('.proffesional', {
+        duration: 800,
+        delay: 500
+      });
+
+      ScrollReveal().reveal('.hobby', {
+        duration: 1000,
+        delay: 500
+      });
+      
       ScrollReveal().reveal('.feature', {
         duration: 900,
-        delay: 400
+        delay: 600
       });
 
       ScrollReveal().reveal('#prosper-form', {
         duration: 900,
         delay: 400
       });
-
-
 
 async function handleSubmit(event) {
 

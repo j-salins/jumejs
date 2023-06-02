@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <link
       rel="apple-touch-icon"
       sizes="76x76"
@@ -179,7 +180,7 @@
             </div>
           </div>
           <div class="flex flex-wrap justify-center">
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-20 md:mb-12 px-4">
+            <div class="feature w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-20 md:mb-12 px-4">
               <div class="px-10">
                 <img
                   alt="..."
@@ -198,7 +199,7 @@ of to your farm.
                 </div>
               </div>
             </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-20 md:mb-12 px-4">
+            <div class="feature w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-20 md:mb-12 px-4">
               <div class="px-10">
                 <img
                   alt="..."
@@ -217,7 +218,7 @@ market with no middle man.
                 </div>
               </div>
             </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-20 md:mb-12 px-4">
+            <div class="feature w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-20 md:mb-12 px-4">
               <div class="px-10">
                 <img
                   alt="..."
@@ -275,7 +276,7 @@ products that wont' tbreak the bank.
               </div>
               <div class="text-center mt-6">
                 <input required type="submit" value="Send" ref="submit"
-                  class="text-pr-green-accent active:bg-pr-green-accent text-sm font-bold px-20 py-3 rounded-xl hover:shadow-lg outline-none border border-solid border-pr-green-accent focus:outline-none focus:ring-opacity-0 mr-1 mb-1"
+                  class="button-submit text-pr-green-accent active:bg-pr-green-accent text-sm font-bold w-48 py-3 rounded-xl hover:shadow-lg outline-none border border-solid border-pr-green-accent focus:outline-none focus:ring-opacity-0 mr-1 mb-1"
                   type="button"
                   style="transition: all 0.15s ease 0s;"
                 >
@@ -383,8 +384,18 @@ products that wont' tbreak the bank.
 
 
       var form = document.getElementById("prosper-form");
+      
+      form.addEventListener("submit", handleSubmit);
 
-form.addEventListener("submit", handleSubmit);
+      ScrollReveal().reveal('.feature', {
+        duration: 900,
+        delay: 400
+      });
+
+      ScrollReveal().reveal('#prosper-form', {
+        duration: 900,
+        delay: 700
+      });
 
 
 
@@ -394,6 +405,9 @@ async function handleSubmit(event) {
 
 
   event.preventDefault();
+  var btn = document.getElementsByClassName('button-submit');
+  console.log(btn);
+  btn.value = "Sending..";
   var status = document.getElementById("my-form-status");
   var data = new FormData(event.target);
   fetch(event.target.action, {
@@ -407,6 +421,7 @@ async function handleSubmit(event) {
       status.innerHTML = "Thank you, your message has been registered!";
       status.classList.add('animate-fade-in');
       status.classList.add('text-pr-green-accent');
+      btn.value = "Send";
       form.reset()
     } else {
       response.json().then(data => {
@@ -414,12 +429,14 @@ async function handleSubmit(event) {
           status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
           status.classList.add('animate-fade-in');
           status.classList.add('text-red-600');
+          btn.value = "Send";
 
 
         } else {
           status.innerHTML = "There has been a error in the request. Please, try again."
           status.classList.add('animate-fade-in');
           status.classList.add('text-red-600');
+          btn.value = "Send";
         }
       })
     }
@@ -427,6 +444,7 @@ async function handleSubmit(event) {
     status.innerHTML = "Hmm.. Nezdevās nosūtīt ziņu, mēģiniet nosūtīt vēlreiz."
     status.classList.add('animate-fade-in');
     status.classList.add('text-red-600');
+    btn.value = "Send";
 
 
   });
@@ -434,4 +452,5 @@ async function handleSubmit(event) {
     });
 
   </script>
+  
 </html>

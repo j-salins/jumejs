@@ -7,6 +7,9 @@
   <meta name="theme-color" content="#000000" />
   <link rel="shortcut icon" href="../assets/img/favicon.ico" />
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="app.js"></script>
+
   <link
         rel="apple-touch-icon"
         sizes="76x76"
@@ -19,6 +22,15 @@
 </head>
 
 <body class="text-gray-800 antialiased">
+  <div x-data="{ faqs: [] }" x-init="faqs = await fetchFAQ().then((data) => data )" class="hidden">
+    <template x-for="faq in faqs">
+      <div>
+        <p x-text="faq.title"></p>
+        <p x-text="faq.excerpt"></p>
+      </div>
+
+    </template>
+  </div>
   <nav
        class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-5 ">
     <div

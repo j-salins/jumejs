@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html class="bg-pr-dark-green">
+<html class="bg-stone-300">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+  <link rel="shortcut icon" href="../assets/img/favicon.ico" />
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <link
         rel="apple-touch-icon"
         sizes="76x76"
-        href="./assets/img/apple-icon.png" />
+        href="../assets/img/apple-icon.png" />
   <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link
-        rel="stylesheet"
-        href="../dist/style.css" />
-  <title>Prosper | Grow Rich </title>
+  <link rel="stylesheet" href="index.css" />
+  <title>Uldis Jumejs Terapija</title>
 </head>
 
-<body class="text-pr-beige antialiased">
+<body class="text-gray-800 antialiased">
   <nav
        class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-5 ">
     <div
@@ -30,23 +28,38 @@
 
         <a
            class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-           href=""><img src="./assets/prosper_logo_top.svg" alt=""></a>
-        <ul class="flex list-none lg:ml-auto w-full justify-end">
+           href=""><img src="./assets/prosper_logo_top.svg" width="250" alt=""></a>
+        <ul class="flex list-none lg:ml-auto w-full justify-end text-orange-100">
           <li class="flex items-center">
             <a href="#contact-us"
-               class="text-pr-beige font-serif mt-1 lg:hover:text-gray-300 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"><span
-                    class="inline-block ml-2">Let’s get in touch</span></a>
+               class="font-sans mt-1 lg:hover:text-gray-300 transition px-3 py-4 lg:py-2 flex items-center text-xs tracking-widest uppercase font-bold"><span
+                    class="inline-block ml-2">Terapija</span></a>
+          </li>
+          <li class="flex items-center">
+            <a href="#contact-us"
+               class="font-sans mt-1 lg:hover:text-gray-300 transition px-3 py-4 lg:py-2 flex items-center text-xs tracking-widest uppercase font-bold"><span
+                    class="inline-block ml-2">Personība</span></a>
+          </li>
+          <li class="flex items-center">
+            <a href="#contact-us"
+               class="font-sans mt-1 lg:hover:text-gray-300 transition px-3 py-4 lg:py-2 flex items-center text-xs tracking-widest uppercase font-bold"><span
+                    class="inline-block ml-2">Raksti</span></a>
+          </li>
+          <li class="flex items-center">
+            <a href="#contact-us"
+               class="font-sans mt-1 lg:hover:text-gray-300 transition px-3 py-4 lg:py-2 flex items-center text-xs tracking-widest uppercase font-bold"><span
+                    class="inline-block ml-2">Kontakti</span></a>
           </li>
         </ul>
         <button
-                class="hidden cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent lg:hidden outline-none focus:outline-none"
+                class="hidden cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent outline-none focus:outline-none"
                 type="button"
                 onclick="toggleNavbar('example-collapse-navbar')">
           <i class="text-white fas fa-bars"></i>
         </button>
       </div>
       <div
-           class="flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
+           class="grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
            id="example-collapse-navbar">
         <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
 
@@ -75,36 +88,144 @@
     </div>
   </nav>
   <main>
-    <div
-         class="relative pt-16 pb-32 flex content-center items-center justify-center h-5/6 animate-fade-in"
-         style="min-height: 75vh;">
+    <header
+            class="relative pt-16 pb-32 flex content-center items-center justify-center animate-fade-in"
+            style="min-height: 70vh;">
       <div
-           class="absolute top-0 w-full h-full bg-center bg-no-repeat bg-cover bg-[url('./assets/hero_bg_mobile.jpg')] md:bg-[url('./assets/hero_bg.jpg')]">
-        <span
-              id="blackOverlay"
-              class="w-full h-full absolute opacity-10 md:opacity-20 bg-black"></span>
+           class="absolute top-0 w-full h-full bg-center bg-no-repeat bg-cover brightness-50 contrast-75 bg-[url('./assets/hero_bg_mobile.jpg')] md:bg-[url('./assets/hero_bg.jpg')]">
+
+        <div class=" bottom-0 absolute h-1/3 w-full z-50 bg-linear-to-b from-transparent to-zinc-500"></div>
       </div>
-      <div class="container relative mx-auto">
+      <div id="quote" class="container relative mx-auto text-orange-100">
         <div class="items-center flex flex-wrap pt-24 md:pt-0">
-          <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+          <div class="w-full lg:w-8/12 px-4 ml-auto mr-auto text-center">
             <div>
-              <h1 class="text-4xl md:text-8xl font-serif">
-                Grow Rich
+              <h1 class="text-2xl md:text-4xl font-serif text-shadow-lg leading-snug">
+                Mēs iznirstam no aizmirstības, <br />lai redzētu savu gaismu.
               </h1>
-              <p class="mt-4 text-lg md:text-3xl font-serif leading-tight">
-                Money grows on trees - <br class="md:hidden" /> if the peat is right.
+              <p class="mt-4 text-md md:text-xl font-serif leading-tight text-right">
+                - Autors nezināms
               </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </header>
 
-    <section class="relative pt-16 md:pt-32">
+    <section id="about" class="relative bg-zinc-200">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row gap-4 justify-start">
+
+          <div class="w-full md:w-1/5 flex justify-center px-6 -mt-24">
+            <img src="./assets/avatar.jpg" alt="Profile avatar"
+                 class="w-48 h-48 md:w-48 md:h-48 rounded-full object-cover shadow-lg border-2 border-gray-300 ">
+          </div>
+
+          <div class="w-full md:w-1/3 text-center md:text-left px-6 py-16">
+            <h2 class="text-2xl md:text-3xl font-serif mb-4 text-gray-700">Uldis Jumejs</h2>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+              Rīgā praktizējošs, pieredzējis integratīvās psihoterapijas speciālists. Neuzskatu sevi par
+              "ekspertu", kurš dod padomus; viņš redz sevi kā uzticamu pavadoni klienta ceļā uz pašatklāsmi. Mans
+              pamatprincips ir tāds, ka katrs indivīds jau sevī nes atbildes un resursus; terapeita uzdevums ir tikai
+              palīdzēt atbrīvot šo iekšējo gudrību. Esmu īpaši specializējies eksistenciālu krīžu, radošuma
+              bloku un sarežģītu attiecību dinamikas jautājumos.
+            </p>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+              Bieži izmantoju dabas metaforas, lai ilustrētu emocionālos procesus – piemēram, "viļņošanās" un
+              "bēguma" ciklus dzīvē. Brīvajā laikā esmu kaislīgs zemledus makšķernieks un amatieru fotogrāfs. Šīs
+              intereses liecina par manu spēju būt pacietīgam, vērotam un novērtēt mirkļa unikālo klusumu, īpašības, kas
+              ir neatsveramas psihoterapeitiskajā darbā.
+            </p>
+            <br>
+            <a href="#"
+               class="block w-full text-center outline-1 outline-gray-400 font-bold py-3 px-8 rounded-lg hover:bg-white hover:outline-0 transition">Lasīt
+              vairāk sadaļā "Personība"</a>
+          </div>
+
+          <div class="w-full md:w-1/3 text-center md:text-left px-6 py-16">
+            <br><br>
+            <h2 class="text-xl mb-4 text-gray-700"><b>Specializējos šādos piecos galvenajos
+                virzienos, integrējot tos savā praksē:</b></h2>
+            <ul class="text-lg text-gray-700 mb-6 leading-normal list-disc">
+              <li class="pb-5"><b>Eksistenciālā Psihoterapija:</b> Koncentrēšanās uz dzīves jēgas, brīvības,
+                atbildības un nāves
+                tēmām. Palīdz klientiem saskarties ar eksistences pamatdilemmām.</li>
+              <li class="pb-5"><b>Junga Analītiskā Psiholoģija:</b> Darbs ar neapzināto, sapņiem, arhetipiem un
+                kolektīvo neapzināto,
+                lai veicinātu individuācijas (sevis pilnveidošanās) procesu.</li>
+              <li class="pb-5"><b>Gestaltterapija: </b>Uzsvars uz "šeit un tagad" pieredzi, palīdzot klientiem
+                apzināties savas
+                jūtas, domas un ķermeņa sajūtas, lai sasniegtu lielāku pašizpratni.</li>
+
+              <li class="pb-5"><b>Apzinātības (Mindfulness) Integrācija: </b>Apzinātības prakses iekļaušana
+                terapeitiskajā darbā, lai
+                mazinātu trauksmi, stresu un veicinātu emocionālo regulāciju.</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="flex">
+
+        </div>
+      </div>
+    </section>
+    <section class="bg-stone-300 mx-auto px-4 py-16 md:py-20">
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap justify-center text-center mb-24">
           <div class="w-full lg:w-6/12 px-4">
-            <h2 class="text-3xl md:text-5xl font-serif">Hard work pays off</h2>
+            <h2 class="text-3xl md:text-5xl font-serif">Raksti</h2>
+            <p class="copy md:text-xl leading-relaxed mt-8 m-4">
+              Nepārtraukti mainoties, mēs kļūstam par to, kas mums jābūt.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-row gap-4 items-stretch overflow-x-auto md:overflow-visible">
+          <div class="w-full md:w-1/3 flex flex-col post bg-white p-6 rounded-lg shadow shrink-0">
+            <p class="text-sm text-gray-500 mb-2">December 10, 2025</p>
+            <h3 class="text-2xl font-serif mb-4">Cilvēks un tukšums: Kā atrast jēgu pasaulē, kurā valda
+              nejaušība?</h3>
+            <p class="text-gray-700 mb-6 grow">
+              Eksistenciālā psihoterapija ir dziļš ceļojums, kas sākas ar neērtu jautājumu: ja reiz mēs visi esam
+              mirstīgi un brīvi, tad kāda ir mūsu atbildība par savu dzīvi un tās piepildījumu?
+            </p>
+            <a href="#" class="text-red-900 font-bold hover:text-red-700">Lasīt vairāk..</a>
+          </div>
+          <div class="w-full md:w-1/3 flex flex-col post bg-white p-6 rounded-lg shadow shrink-0">
+            <p class="text-sm text-gray-500 mb-2">December 8, 2025</p>
+            <h3 class="text-2xl font-serif mb-4">Kā Gestaltterapija palīdz beigt dzīvot "vajadzētu" un sākt dzīvot "ir"?
+            </h3>
+            <p class="text-gray-700 mb-6 grow">
+              Mūsu pagātne un nākotne bieži vien ir emocionāls enkurs, bet Gestaltterapija aicina mūs atgriezties
+              vienīgajā patiesajā laikā — šeit un tagad, lai beidzot pabeigtu nepabeigtās situācijas un atgūtu savu
+              pilnību.
+            </p>
+            <a href="#" class="text-red-900 font-bold hover:text-red-700">Lasīt vairāk..</a>
+          </div>
+          <div class="w-full md:w-1/3 flex flex-col post bg-white p-6 rounded-lg shadow shrink-0">
+            <p class="text-sm text-gray-500 mb-2">December 5, 2025</p>
+            <h3 class="text-2xl font-serif mb-4">Vienkāršs ceļvedis Apzinātības integrēšanai ikdienā.</h3>
+            <p class="text-gray-700 mb-6 grow">
+              Apzinātības (Mindfulness) prakses integrēšana psihoterapijā piedāvā fundamentāli jaunu veidu, kā
+              attiekties pret savām grūtībām, mācoties vērot domas un emocijas kā mākoņus, neļaujot tiem noteikt mūsu
+              realitāti.
+            </p>
+            <a href="#" class="text-red-900 font-bold hover:text-red-700">Lasīt vairāk..</a>
+          </div>
+
+        </div>
+        <div class="flex py-16">
+          <a href="#"
+             class="block ml-auto text-center outline-1 outline-gray-400 font-bold py-3 px-8 rounded-lg hover:bg-white hover:outline-0 transition">Lasīt
+            vairāk rakstus</a>
+        </div>
+      </div>
+    </section>
+    <section class="bg-stone-300 mx-auto px-4 py-16 md:py-20">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-center text-center mb-24">
+          <div class="w-full lg:w-6/12 px-4">
+            <hr class="pt-20">
+            <h2 class="text-3xl md:text-5xl font-serif">Terapija</h2>
             <p class="copy md:text-xl leading-relaxed mt-8 m-4">
               Having the richest soil means best possible harvest results. Our peat is the perfect way to give your
               plants the healthy soil they need for success.
@@ -112,52 +233,13 @@
           </div>
         </div>
         <div class="flex flex-wrap">
-          <img src="./assets/body_work_bg.png" class="w-full object-cover" alt="">
+          <img src="../assets/body_work_bg.png" class="w-full object-cover" alt="">
         </div>
       </div>
+
     </section>
 
-    <section class="relative py-10">
-      <div class="proffesional container mx-auto px-4">
-        <div class="items-center flex flex-wrap">
-          <div class="w-full md:w-5/12 ml-auto px-4 flex justify-center order-2 md:order-1">
-            <div class=" w-10/12 md:w-8/12">
-              <h3 class="text-3xl md:text-5xl font-serif hidden md:block">Professional</h3>
-              <p class="mt-6 md:text-2xl leading-relaxed font-serif text-center md:text-left">
-                Large-scale farming operations, with a focus on maximising efficiency. Uses advanced technology to
-                optimise their crop yields.
-              </p>
-            </div>
-          </div>
-          <div class="w-full md:w-5/12 ml-auto order-1 md:order-2">
-            <h3 class="text-3xl font-serif text-center pb-10 md:hidden">Proffesional</h3>
-            <img
-                 alt="..."
-                 class="max-w-full"
-                 src="./assets/proffesional.jpg" />
-          </div>
-        </div>
-      </div>
-      <div class="hobby container mx-auto px-4 mt-20 md:mt-8">
-        <div class="items-center flex flex-wrap">
-          <div class="w-full md:w-5/12 mr-auto">
-            <h3 class="text-3xl font-serif text-center pb-10 md:hidden">Hobby</h3>
-            <img
-                 alt="..."
-                 class="max-w-full"
-                 src="./assets/hobby.jpg" />
-          </div>
-          <div class="w-full md:w-5/12 ml-auto mr-auto px-4 flex justify-center">
-            <div class=" w-10/12 md:w-8/12  md:pl-10">
-              <h3 class="text-3xl md:text-5xl font-serif hidden md:block">Hobby</h3>
-              <p class="mt-6 md:text-2xl leading-relaxed font-serif text-center md:text-left">
-                Ideal peat product for hobbyists seeking to enhance the health and productivity of their plants. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="pt-28 md:pb-20">
+    <section class="pt-28 md:pb-20 hidden">
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap justify-center text-center mb-24">
           <div class="w-full lg:w-6/12 px-4">
@@ -173,7 +255,7 @@
             <div class="px-10">
               <img
                    alt="..."
-                   src="./assets/icon_fastest_delivery.svg"
+                   src="../assets/icon_fastest_delivery.svg"
                    class="shadow-lg rounded-full max-w-full mx-auto"
                    style="max-width: 115px;" />
               <div class="pt-6 text-center">
@@ -191,7 +273,7 @@
             <div class="px-10">
               <img
                    alt="..."
-                   src="./assets/icon_best_price.svg"
+                   src="../assets/icon_best_price.svg"
                    class="shadow-lg rounded-full max-w-full mx-auto"
                    style="max-width: 115px;" />
               <div class="pt-6 text-center">
@@ -209,7 +291,7 @@
             <div class="px-10">
               <img
                    alt="..."
-                   src="./assets/icon_biggest_savings.svg"
+                   src="../assets/icon_biggest_savings.svg"
                    class="shadow-lg rounded-full max-w-full mx-auto"
                    style="max-width: 115px;" />
               <div class="pt-6 text-center">
@@ -225,16 +307,16 @@
         </div>
       </div>
     </section>
-    <section id="contact-us" class="relative block py-20 bg-pr-dark-green">
+    <section id="contact-us" class="relative block py-20 bg-zinc-700">
       <div class="container mx-auto px-2">
         <div class="flex flex-wrap justify-center">
           <div class="w-full lg:w-7/12 px-2">
-            <h2 class="text-2xl md:text-3xl font-serif text-center mb-8">Let’s get in touch</h2>
+            <h2 class="text-3xl md:text-5xl font-serif  text-center mb-8 text-orange-100">Kontakti</h2>
 
             <form id="prosper-form" action="https://formspree.io/f/xrgvwggg" method="POST">
 
               <div
-                   class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-xl border-solid border border-pr-green-accent">
+                   class="relative flex flex-col min-w-0 wrap-break-word w-full mb-6 shadow-lg rounded-xl border-solid border border-orange-100">
                 <div class="flex-auto p-5 lg:p-10">
 
                   <div class="relative w-full mb-3">
@@ -242,7 +324,7 @@
                            type="email"
                            id="email"
                            name="email"
-                           class="border-0 px-3 py-3 placeholder-white placeholder-opacity-25 text-pr-beige bg-transparent focus:outline-none focus:ring-opacity-0 w-full"
+                           class="border-0 px-3 py-3 placeholder-white placeholder-opacity-25 text-orange-100 bg-transparent focus:outline-none focus:ring-opacity-0 w-full"
                            placeholder="example@email.com"
                            style="transition: all 0.15s ease 0s;" />
                   </div>
@@ -253,14 +335,14 @@
                               name="message"
                               rows="8"
                               cols="80"
-                              class="px-3 py-3 border-0 border-t border-solid border border-pr-green-accent placeholder-white placeholder-opacity-25 text-pr-beige bg-transparent focus:outline-none focus:ring-opacity-0 w-full"
+                              class="px-3 py-3 border-0 border-t border-solid border-orange-100 placeholder-white placeholder-opacity-25 text-orange-100 bg-transparent focus:outline-none focus:ring-opacity-0 w-full"
                               placeholder="Hello, I am interested in prospering."></textarea>
                   </div>
                 </div>
               </div>
               <div class="text-center mt-6">
-                <input required type="submit" value="Send" ref="submit"
-                       class="button-submit text-pr-green-accent active:bg-pr-green-accent font-bold w-48 py-3 rounded-xl hover:shadow-lg outline-none border border-solid border-pr-green-accent focus:outline-none focus:ring-opacity-0 mr-1 mb-1"
+                <input required type="submit" value="Nosūtīt Ziņu" ref="submit"
+                       class="button-submit text-orange-100 active:bg-pr-green-accent font-bold w-48 py-3 rounded-xl hover:shadow-lg outline-none border border-solid border-pr-green-accent focus:outline-none focus:ring-opacity-0 mr-1 mb-1"
                        type="button"
                        style="transition: all 0.15s ease 0s;">
 
@@ -268,39 +350,39 @@
 
             </form>
 
-            <p id="my-form-status" class="text-lg text-pr-beige w-full text-center h-20 mt-10"></p>
+            <p id="my-form-status" class="text-lg text-orange-100 w-full text-center h-20 mt-10"></p>
 
           </div>
         </div>
       </div>
     </section>
   </main>
-  <footer class="relative bg-pr-beige pt-8 pb-6">
+  <footer class="relative bg-zinc-700 pt-8 pb-6">
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap">
         <div class="w-full lg:w-6/12 px-4">
-          <img src="./assets/prosper_logo_footer.svg" class="opacity-20" alt="">
+          <img src="../assets/prosper_logo_footer.svg" class="opacity-20" alt="">
         </div>
         <div class="w-full lg:w-6/12 px-4">
           <div class="flex flex-wrap items-top mb-6">
             <div class="w-full lg:w-4/12 px-4 ml-0 pl-0 mt-4 md:ml-auto">
               <span
-                    class="block uppercase text-gray-600 text-sm mb-2">Contact</span>
+                    class="block uppercase text-orange-100 text-sm mb-2">Contact</span>
               <ul class="list-unstyled">
                 <li>
                   <p
-                     class="text-gray-700 hover block pb-2 text-sm">Alise Rozenberga</p>
+                     class="text-orange-100 hover block pb-2 text-sm">Alise Rozenberga</p>
                 </li>
                 <li>
                   <a
-                     class="text-gray-700 hover block pb-2 text-sm"
+                     class="text-orange-100 hover block pb-2 text-sm"
                      href="mailto:ar@prosperpeat.com">ar@prosperpeat.com</a>
                 </li>
               </ul>
             </div>
             <div class="w-full hidden lg:w-4/12 px-4">
               <span
-                    class="block uppercase text-gray-600 text-sm mb-2">Other Resources</span>
+                    class="block uppercase text-orange-100 text-sm mb-2">Other Resources</span>
               <ul class="list-unstyled">
                 <li>
                   <a
@@ -332,7 +414,7 @@
       <div
            class="flex flex-wrap items-center md:justify-between justify-center">
         <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-          <div class="text-sm text-gray-600 py-1">
+          <div class="text-sm text-orange-100 py-1">
             Copyright © 2023 Prosper
           </div>
         </div>
@@ -370,6 +452,16 @@
     ScrollReveal().reveal('#prosper-form', {
       duration: 900,
       delay: 400
+    });
+
+    ScrollReveal().reveal('#posts', {
+      duration: 900,
+      delay: 400
+    });
+
+    ScrollReveal().reveal('#quote', {
+      duration: 1200,
+      delay: 700
     });
 
     async function handleSubmit(event) {

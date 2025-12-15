@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html class="bg-zinc-200" lang="lv">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="shortcut icon" href="../assets/img/favicon.ico" />
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="app.js"></script>
+
+  <link
+        rel="apple-touch-icon"
+        sizes="76x76"
+        href="../assets/img/apple-icon.png" />
+  <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="index.css" />
+  <title>Uldis Jumejs Terapija</title>
+</head>
+
+<body class="text-gray-800 antialiased">
+  <nav
+       class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-5 ">
+    <div
+         class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+      <div
+           class="w-full relative flex justify-between lg:static lg:justify-start">
+
+        <a
+           class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+           href="index.html"><img src="./assets/prosper_logo_top.svg" width="250" alt=""></a>
+        <ul class="flex list-none lg:ml-auto w-full justify-end text-orange-100">
+          <li class="flex items-center">
+            <a href="#contact-us"
+               class="font-sans mt-1 lg:hover:text-gray-300 transition px-3 py-4 lg:py-2 flex items-center text-xs tracking-widest uppercase font-bold"><span
+                    class="inline-block ml-2">Terapija</span></a>
+          </li>
+          <li class="flex items-center">
+            <a href="#contact-us"
+               class="font-sans mt-1 lg:hover:text-gray-300 transition px-3 py-4 lg:py-2 flex items-center text-xs tracking-widest uppercase font-bold"><span
+                    class="inline-block ml-2">Personība</span></a>
+          </li>
+          <li class="flex items-center">
+            <a href="article.html"
+               class="font-sans mt-1 lg:hover:text-gray-300 transition px-3 py-4 lg:py-2 flex items-center text-xs tracking-widest uppercase font-bold"><span
+                    class="inline-block ml-2">Raksti</span></a>
+          </li>
+          <li class="flex items-center">
+            <a href="#contact-us"
+               class="font-sans mt-1 lg:hover:text-gray-300 transition px-3 py-4 lg:py-2 flex items-center text-xs tracking-widest uppercase font-bold"><span
+                    class="inline-block ml-2">Kontakti</span></a>
+          </li>
+        </ul>
+        <button
+                class="hidden cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent outline-none focus:outline-none"
+                type="button"
+                onclick="toggleNavbar('example-collapse-navbar')">
+          <i class="text-white fas fa-bars"></i>
+        </button>
+      </div>
+      <div
+           class="grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
+           id="example-collapse-navbar">
+        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+
+          <li class="flex items-center md:mr-12">
+            <a href="#contact-us"
+               class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"><span
+                    class="inline-block ml-2">Let’s get in touch</span></a>
+          </li>
+
+          <li class="flex items-center">
+            <a
+               class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+               href="#pablo"><i
+                 class="lg:text-gray-300 fab fa-facebook text-lg leading-lg "></i><span
+                    class="lg:hidden inline-block ml-2">Share</span></a>
+          </li>
+          <li class="flex items-center">
+            <a
+               class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+               href="#pablo"><i
+                 class="lg:text-gray-300 fab fa-twitter text-lg leading-lg "></i><span
+                    class="lg:hidden inline-block ml-2">Tweet</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <header
+            class="relative pt-16 pb-32 flex content-center items-center justify-center animate-fade-in"
+            style="min-height: 40vh;">
+      <div
+           class="absolute top-0 w-full h-full bg-center bg-no-repeat bg-cover brightness-75 contrast-75 bg-fixed bg-[url('./assets/hero_bg_mobile.jpg')] md:bg-[url('./assets/hero_bg.jpg')]">
+
+        <div class=" bottom-0 absolute h-1/3 w-full z-50 bg-linear-to-b from-transparent to-zinc-500"></div>
+      </div>
+
+    </header>
+    <section id="article" class="relative bg-zinc-200">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row gap-4 justify-center mb-24">
+
+          <div class="w-full self md:w-2/3 text-center md:text-left px-6 md:px-12 py-16 -mt-24 bg-zinc-100 ">
+            <p class="text-sm text-gray-500 mb-2">December 10, 2025</p>
+
+            <h3 class="text-2xl  md:text-4xl font-serif leading-tight mb-4 md:mb-12 md:max-w-9/12">Cilvēks un tukšums:
+              Kā atrast jēgu
+              pasaulē,
+              kurā valda
+              nejaušība?</h3>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+              Dzīve bieži vien mūs nostāda pretim eksistenciālai mīklai: kā atrast dziļāku jēgu pasaulē, kas šķiet
+              nejauša, pat absurda? Šis jautājums, kas ir eksistenciālās psihoterapijas kodols, atspoguļo cilvēka dabīgo
+              vēlmi pēc kārtības, nozīmīguma un paredzamības, saskaroties ar realitāti, kas bieži vien neatbilst šīm
+              cerībām. Tukšums, ko mēs jūtam, nav obligāti trūkums, bet gan atvērtība – telpa, kurā mēs paši varam
+              veidot savu jēgu.
+            </p>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+              Mūsdienu sabiedrībā mēs esam pieraduši meklēt jēgu ārpus sevis: karjerā, attiecībās, materiālajās vērtībās
+              vai sociālajos panākumos. Taču, kad šīs ārējās lietas sabrūk vai neapmierina mūsu dziļākās ilgas, mēs
+              saskaramies ar tukšuma sajūtu. Šis tukšums var būt biedējošs, jo tas liek mums saskarties ar faktu, ka
+              nekas ārējs nevar aizpildīt to tukšumu, kas patiesībā ir mūsu pašu brīvība un atbildība. Jēga nav atrodama
+              iepakojumā; tā ir jārada.Mūsdienu sabiedrībā mēs esam pieraduši meklēt jēgu ārpus sevis: karjerā,
+              attiecībās, materiālajās vērtībās vai sociālajos panākumos. Taču, kad šīs ārējās lietas sabrūk vai
+              neapmierina mūsu dziļākās ilgas, mēs saskaramies ar tukšuma sajūtu. Šis tukšums var būt biedējošs, jo tas
+              liek mums saskarties ar faktu, ka nekas ārējs nevar aizpildīt to tukšumu, kas patiesībā ir mūsu pašu
+              brīvība un atbildība. Jēga nav atrodama iepakojumā; tā ir jārada.
+            </p>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">Eksistenciālā psihoterapija piedāvā atšķirīgu pieeju.
+              Tā necenšas sniegt gatavas atbildes, bet gan palīdz indivīdam saskarties ar četrām galvenajām eksistences
+              dotībām: nāve, brīvība, izolācija un bezjēdzība. Sākumā šīs tēmas var šķist drūmas, taču tieši to
+              apzināšanās un pieņemšana ļauj mums pilnībā apzināties savu dzīvi un tās vērtību. Nāves apziņa liek mums
+              novērtēt katru mirkli, brīvība uzliek atbildību par savām izvēlēm, izolācija māca meklēt patiesu saikni ar
+              citiem, un bezjēdzība mudina radīt savu personīgo jēgu.</p>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">Jēgas radīšana nav vienreizējs akts, bet gan
+              nepārtraukts process. Tas ietver apzinātu izvēli, darbību un vērtību definēšanu. Tas var būt saistīts ar
+              radošumu, attiecībām, palīdzību citiem vai pat vienkārši ar spēju novērtēt skaistumu un pieredzi, kas mūs
+              ieskauj. Svarīgi ir apzināties, ka jēga nav kaut kas, ko mēs atklājam, bet gan kaut kas, ko mēs aktīvi
+              veidojam, balstoties uz savām vērtībām un pasaules uztveri.</p>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">Tomēr šis ceļš nav viegls. Bieži vien ir jāpārvar
+              bailes no brīvības, no izvēlēm, no atbildības un no saskarsmes ar pašu tukšumu. Psihoterapeita uzdevums ir
+              pavadīt cilvēku šajā ceļā, palīdzot viņam izpētīt savas bažas, apzināties savus resursus un atrast drosmi
+              stāties pretī dzīves izaicinošajām pusēm. Tas nav par to, kā atrast "pareizo" jēgu, bet gan par to, kā
+              atrast savu jēgu, kas rezonē ar paša būtību.</p>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">Galu galā, nejaušības pilnā pasaule nenozīmē
+              bezjēdzīgu pasauli. Tieši pretēji, tā piedāvā milzīgu audeklu, uz kura mēs varam gleznot savu stāstu.
+              Pieņemot šo nejaušību un brīvību, mēs atklājam, ka spēks radīt jēgu atrodas mūsos pašos. Tas ir aicinājums
+              dzīvot autentiski, ar apziņu un ar drosmi veidot savu likteni, pat ja ceļš nav iepriekš izplānots vai
+              garantēts.</p>
+            <br><br>
+            <div id="social-share" class="flex flex-col items-center justify-center py-8">
+              <h4 class="text-sm font-serif mb-6 text-gray-500">Dalīties ar šo rakstu</h4>
+              <div class="flex gap-6">
+                <a href="#" class="text-gray-700 hover:text-blue-600 transition">
+                  <i class="fab fa-facebook text-3xl"></i>
+                </a>
+                <a href="#" class="text-gray-700 hover:text-pink-600 transition">
+                  <i class="fab fa-instagram text-3xl"></i>
+                </a>
+                <a href="#" class="text-gray-700 hover:text-blue-400 transition">
+                  <i class="fab fa-twitter text-3xl"></i>
+                </a>
+              </div>
+            </div>
+            <div id="leave-comment" class="flex flex-col items-center justify-center py-12 px-4">
+              <h4 class="text-2xl font-serif mb-8">Pievienot komentāru</h4>
+              <form class="w-full max-w-2xl">
+                <div class="mb-6">
+                  <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Vārds</label>
+                  <input type="text" id="name" name="name" required
+                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-500 transition">
+                </div>
+                <div class="mb-6">
+                  <label for="comment" class="block text-gray-700 text-sm font-bold mb-2">Komentārs</label>
+                  <textarea id="comment" name="comment" rows="6" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-500 transition resize-none"></textarea>
+                </div>
+                <div class="flex justify-center">
+                  <button type="submit"
+                          class="bg-gray-800 text-white font-bold py-3 px-8 rounded-lg hover:bg-gray-700 transition">Submit</button>
+                </div>
+              </form>
+            </div>
+            <div id="comments" class="flex flex-col items-center py-12 px-4">
+              <div class="w-full max-w-2xl space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow">
+                  <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-gray-400 rounded-full mr-4"></div>
+                    <div>
+                      <h5 class="font-bold text-gray-800">Anna Bērziņa</h5>
+                      <p class="text-sm text-gray-500">December 12, 2025</p>
+                    </div>
+                  </div>
+                  <p class="text-gray-700 leading-relaxed">
+                    Paldies par šo brīnišķīgo rakstu! Man īpaši patika Jūsu pieeja tukšuma izpratnei kā iespējai, nevis
+                    trūkumam. Tas liek domāt par daudzām lietām savā dzīvē.
+                  </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                  <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-gray-400 rounded-full mr-4"></div>
+                    <div>
+                      <h5 class="font-bold text-gray-800">Jānis Kalniņš</h5>
+                      <p class="text-sm text-gray-500">December 13, 2025</p>
+                    </div>
+                  </div>
+                  <p class="text-gray-700 leading-relaxed">
+                    Ļoti dziļš un pārdomāts raksts. Eksistenciālā psihoterapija tiešām piedāvā unikālu skatījumu uz
+                    dzīves
+                    jēgu. Vai būtu iespējams uzzināt vairāk par praktiskiem soļiem, kā sākt šo jēgas meklēšanas ceļu?
+                  </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                  <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-gray-400 rounded-full mr-4"></div>
+                    <div>
+                      <h5 class="font-bold text-gray-800">Līga Ozola</h5>
+                      <p class="text-sm text-gray-500">December 14, 2025</p>
+                    </div>
+                  </div>
+                  <p class="text-gray-700 leading-relaxed">
+                    Brīnišķīgi formulēts! Ideja par to, ka mēs paši radām savu jēgu, nevis atklājam to, ir ļoti spēcīga.
+                    Tas
+                    dod cerību un motivāciju turpināt meklēt savu ceļu.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="relative bg-zinc-700 pt-8 pb-6">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap">
+        <div class="w-full lg:w-6/12 px-4">
+          <img src="../assets/prosper_logo_footer.svg" class="opacity-20" alt="">
+        </div>
+        <div class="w-full lg:w-6/12 px-4">
+          <div class="flex flex-wrap items-top mb-6">
+            <div class="w-full lg:w-4/12 px-4 ml-0 pl-0 mt-4 md:ml-auto">
+              <span
+                    class="block uppercase text-orange-100 text-sm mb-2">Contact</span>
+              <ul class="list-unstyled">
+                <li>
+                  <p
+                     class="text-orange-100 hover block pb-2 text-sm">Ulds Jumejs</p>
+                </li>
+                <li>
+                  <a
+                     class="text-orange-100 hover block pb-2 text-sm"
+                     href="mailto:ar@prosperpeat.com">ar@prosperpeat.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full hidden lg:w-4/12 px-4">
+              <span
+                    class="block uppercase text-orange-100 text-sm mb-2">Other Resources</span>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                     class="text-gray-700 hover block pb-2 text-sm"
+                     href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md">MIT
+                    License</a>
+                </li>
+                <li>
+                  <a
+                     class="text-gray-700 hover block pb-2 text-sm"
+                     href="https://creative-tim.com/terms">Terms &amp; Conditions</a>
+                </li>
+                <li>
+                  <a
+                     class="text-gray-700 hover block pb-2 text-sm"
+                     href="https://creative-tim.com/privacy">Privacy Policy</a>
+                </li>
+                <li>
+                  <a
+                     class="text-gray-700 hover block pb-2 text-sm"
+                     href="https://creative-tim.com/contact-us">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-6 border-gray-400 opacity-30" />
+      <div
+           class="flex flex-wrap items-center md:justify-between justify-center">
+        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+          <div class="text-sm text-orange-100 py-1">
+            Copyright © 2025 Uldis Jumejs Terapija
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script>
+  function toggleNavbar(collapseID) {
+    document.getElementById(collapseID).classList.toggle("hidden");
+    document.getElementById(collapseID).classList.toggle("block");
+  }
+
+  document.addEventListener("DOMContentLoaded", function (e) {
+
+    var form = document.getElementById("prosper-form");
+
+    form.addEventListener("submit", handleSubmit);
+
+    ScrollReveal().reveal('.proffesional', {
+      duration: 800,
+      delay: 500
+    });
+
+    ScrollReveal().reveal('.hobby', {
+      duration: 1000,
+      delay: 500
+    });
+
+    ScrollReveal().reveal('.feature', {
+      duration: 900,
+      delay: 600
+    });
+
+    ScrollReveal().reveal('#prosper-form', {
+      duration: 900,
+      delay: 200
+    });
+
+    ScrollReveal().reveal('#posts', {
+      duration: 900,
+      delay: 200
+    });
+
+    ScrollReveal().reveal('#quote', {
+      duration: 1200,
+      delay: 600
+    });
+
+    async function handleSubmit(event) {
+
+      console.log(form);
+
+
+      event.preventDefault();
+      var btn = document.querySelector('.button-submit');
+      console.log(btn);
+      btn.setAttribute("value", "Sending..");
+      btn.setAttribute("disabled", "true");
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thank you, your message has been registered!";
+          status.classList.add('animate-fade-in');
+          status.classList.add('text-pr-green-accent');
+          btn.setAttribute("value", "Send");
+          btn.setAttribute("disabled", "false");
+
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "There has been a error in the request. Please, try again."
+            }
+            status.classList.add('animate-fade-in');
+            status.classList.add('text-red-600');
+            btn.setAttribute("value", "Send");
+            btn.setAttribute("disabled", "false");
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Hmm.. Nezdevās nosūtīt ziņu, mēģiniet nosūtīt vēlreiz."
+        status.classList.add('animate-fade-in');
+        status.classList.add('text-red-600');
+        btn.value = "Send";
+        btn.setAttribute("disabled", "false");
+      });
+    }
+  });
+
+</script>
+
+</html>

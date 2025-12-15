@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="bg-stone-300">
+<html class="bg-zinc-200" lang="lv">
 
 <head>
   <meta charset="utf-8" />
@@ -22,15 +22,6 @@
 </head>
 
 <body class="text-gray-800 antialiased">
-  <div x-data="{ faqs: [] }" x-init="faqs = await fetchFAQ().then((data) => data )" class="hidden">
-    <template x-for="faq in faqs">
-      <div>
-        <p x-text="faq.title"></p>
-        <p x-text="faq.excerpt"></p>
-      </div>
-
-    </template>
-  </div>
   <nav
        class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-5 ">
     <div
@@ -102,272 +93,150 @@
   <main>
     <header
             class="relative pt-16 pb-32 flex content-center items-center justify-center animate-fade-in"
-            style="min-height: 70vh;">
+            style="min-height: 40vh;">
       <div
            class="absolute top-0 w-full h-full bg-center bg-no-repeat bg-cover brightness-75 contrast-75 bg-fixed bg-[url('./assets/hero_bg_mobile.jpg')] md:bg-[url('./assets/hero_bg.jpg')]">
 
         <div class=" bottom-0 absolute h-1/3 w-full z-50 bg-linear-to-b from-transparent to-zinc-500"></div>
       </div>
-      <div id="quote" class="container relative mx-auto text-orange-100">
-        <div class="items-center flex flex-wrap pt-24 md:pt-0">
-          <div class="w-full lg:w-8/12 px-4 ml-auto mr-auto text-center">
-            <div>
-              <h1 class="text-2xl md:text-4xl font-serif text-shadow-lg leading-snug">
-                Mēs iznirstam no aizmirstības, <br />lai redzētu savu gaismu.
-              </h1>
-              <p class="mt-4 text-md md:text-xl font-serif leading-tight text-right">
-                - Autors nezināms
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </header>
-
-    <section id="about" class="relative bg-zinc-200">
+    <section id="article" class="relative bg-zinc-200">
       <div class="container mx-auto px-4">
-        <div class="flex flex-col md:flex-row gap-4 justify-start">
+        <div class="flex flex-col md:flex-row gap-4 justify-center mb-24">
 
-          <div class="w-full md:w-1/5 flex justify-center px-6 -mt-24">
-            <img src="./assets/avatar.jpg" alt="Profile avatar"
-                 class="w-48 h-48 md:w-48 md:h-48 rounded-full object-cover shadow-lg border-2 border-gray-300 ">
-          </div>
-
-          <div class="w-full md:w-1/3 text-center md:text-left px-6 py-16">
-            <h2 class="text-2xl md:text-3xl font-serif mb-4 text-gray-700">Uldis Jumejs</h2>
-            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-              Rīgā praktizējošs, pieredzējis integratīvās psihoterapijas speciālists. Neuzskatu sevi par
-              "ekspertu", kurš dod padomus; viņš redz sevi kā uzticamu pavadoni klienta ceļā uz pašatklāsmi. Mans
-              pamatprincips ir tāds, ka katrs indivīds jau sevī nes atbildes un resursus; terapeita uzdevums ir tikai
-              palīdzēt atbrīvot šo iekšējo gudrību. Esmu īpaši specializējies eksistenciālu krīžu, radošuma
-              bloku un sarežģītu attiecību dinamikas jautājumos.
-            </p>
-            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-              Bieži izmantoju dabas metaforas, lai ilustrētu emocionālos procesus – piemēram, "viļņošanās" un
-              "bēguma" ciklus dzīvē. Brīvajā laikā esmu kaislīgs zemledus makšķernieks un amatieru fotogrāfs. Šīs
-              intereses liecina par manu spēju būt pacietīgam, vērotam un novērtēt mirkļa unikālo klusumu, īpašības, kas
-              ir neatsveramas psihoterapeitiskajā darbā.
-            </p>
-            <br>
-            <a href="#"
-               class="block w-full text-center outline-1 outline-gray-400 font-bold py-3 px-8 rounded-lg hover:bg-white hover:outline-0 transition">Lasīt
-              vairāk sadaļā "Personība"</a>
-          </div>
-
-          <div class="w-full md:w-1/3 text-center md:text-left px-6 py-16">
-            <br><br>
-            <h2 class="text-xl mb-4 text-gray-700"><b>Specializējos šādos piecos galvenajos
-                virzienos, integrējot tos savā praksē:</b></h2>
-            <ul class="text-lg text-gray-700 mb-6 leading-normal list-disc">
-              <li class="pb-5"><b>Eksistenciālā Psihoterapija:</b> Koncentrēšanās uz dzīves jēgas, brīvības,
-                atbildības un nāves
-                tēmām. Palīdz klientiem saskarties ar eksistences pamatdilemmām.</li>
-              <li class="pb-5"><b>Junga Analītiskā Psiholoģija:</b> Darbs ar neapzināto, sapņiem, arhetipiem un
-                kolektīvo neapzināto,
-                lai veicinātu individuācijas (sevis pilnveidošanās) procesu.</li>
-              <li class="pb-5"><b>Gestaltterapija: </b>Uzsvars uz "šeit un tagad" pieredzi, palīdzot klientiem
-                apzināties savas
-                jūtas, domas un ķermeņa sajūtas, lai sasniegtu lielāku pašizpratni.</li>
-
-              <li class="pb-5"><b>Apzinātības (Mindfulness) Integrācija: </b>Apzinātības prakses iekļaušana
-                terapeitiskajā darbā, lai
-                mazinātu trauksmi, stresu un veicinātu emocionālo regulāciju.</li>
-            </ul>
-
-          </div>
-        </div>
-        <div class="flex">
-
-        </div>
-      </div>
-    </section>
-    <section class="bg-stone-300 mx-auto px-4 py-16 md:py-20">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-wrap justify-center text-center mb-24">
-          <div class="w-full lg:w-6/12 px-4">
-            <h2 class="text-3xl md:text-5xl font-serif">Raksti</h2>
-            <p class="copy md:text-xl leading-relaxed mt-8 m-4">
-              Nepārtraukti mainoties, mēs kļūstam par to, kas mums jābūt.
-            </p>
-          </div>
-        </div>
-        <div id="posts" class="flex flex-row gap-4 items-stretch overflow-x-auto md:overflow-visible">
-          <div class="w-full md:w-1/3 flex flex-col post bg-white p-6 rounded-lg shadow shrink-0">
+          <div class="w-full self md:w-2/3 text-center md:text-left px-6 md:px-12 py-16 -mt-24 bg-zinc-100 ">
             <p class="text-sm text-gray-500 mb-2">December 10, 2025</p>
-            <h3 class="text-2xl font-serif mb-4">Cilvēks un tukšums: Kā atrast jēgu pasaulē, kurā valda
+
+            <h3 class="text-2xl  md:text-4xl font-serif leading-tight mb-4 md:mb-12 md:max-w-9/12">Cilvēks un tukšums:
+              Kā atrast jēgu
+              pasaulē,
+              kurā valda
               nejaušība?</h3>
-            <p class="text-gray-700 mb-6 grow">
-              Eksistenciālā psihoterapija ir dziļš ceļojums, kas sākas ar neērtu jautājumu: ja reiz mēs visi esam
-              mirstīgi un brīvi, tad kāda ir mūsu atbildība par savu dzīvi un tās piepildījumu?
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+              Dzīve bieži vien mūs nostāda pretim eksistenciālai mīklai: kā atrast dziļāku jēgu pasaulē, kas šķiet
+              nejauša, pat absurda? Šis jautājums, kas ir eksistenciālās psihoterapijas kodols, atspoguļo cilvēka dabīgo
+              vēlmi pēc kārtības, nozīmīguma un paredzamības, saskaroties ar realitāti, kas bieži vien neatbilst šīm
+              cerībām. Tukšums, ko mēs jūtam, nav obligāti trūkums, bet gan atvērtība – telpa, kurā mēs paši varam
+              veidot savu jēgu.
             </p>
-            <a href="article.html" class="text-red-900 font-bold hover:text-red-700">Lasīt vairāk..</a>
-          </div>
-          <div class="w-full md:w-1/3 flex flex-col post bg-white p-6 rounded-lg shadow shrink-0">
-            <p class="text-sm text-gray-500 mb-2">December 8, 2025</p>
-            <h3 class="text-2xl font-serif mb-4">Kā Gestaltterapija palīdz beigt dzīvot "vajadzētu" un sākt dzīvot "ir"?
-            </h3>
-            <p class="text-gray-700 mb-6 grow">
-              Mūsu pagātne un nākotne bieži vien ir emocionāls enkurs, bet Gestaltterapija aicina mūs atgriezties
-              vienīgajā patiesajā laikā — šeit un tagad, lai beidzot pabeigtu nepabeigtās situācijas un atgūtu savu
-              pilnību.
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+              Mūsdienu sabiedrībā mēs esam pieraduši meklēt jēgu ārpus sevis: karjerā, attiecībās, materiālajās vērtībās
+              vai sociālajos panākumos. Taču, kad šīs ārējās lietas sabrūk vai neapmierina mūsu dziļākās ilgas, mēs
+              saskaramies ar tukšuma sajūtu. Šis tukšums var būt biedējošs, jo tas liek mums saskarties ar faktu, ka
+              nekas ārējs nevar aizpildīt to tukšumu, kas patiesībā ir mūsu pašu brīvība un atbildība. Jēga nav atrodama
+              iepakojumā; tā ir jārada.Mūsdienu sabiedrībā mēs esam pieraduši meklēt jēgu ārpus sevis: karjerā,
+              attiecībās, materiālajās vērtībās vai sociālajos panākumos. Taču, kad šīs ārējās lietas sabrūk vai
+              neapmierina mūsu dziļākās ilgas, mēs saskaramies ar tukšuma sajūtu. Šis tukšums var būt biedējošs, jo tas
+              liek mums saskarties ar faktu, ka nekas ārējs nevar aizpildīt to tukšumu, kas patiesībā ir mūsu pašu
+              brīvība un atbildība. Jēga nav atrodama iepakojumā; tā ir jārada.
             </p>
-            <a href="article.html" class="text-red-900 font-bold hover:text-red-700">Lasīt vairāk..</a>
-          </div>
-          <div class="w-full md:w-1/3 flex flex-col post bg-white p-6 rounded-lg shadow shrink-0">
-            <p class="text-sm text-gray-500 mb-2">December 5, 2025</p>
-            <h3 class="text-2xl font-serif mb-4">Vienkāršs ceļvedis Apzinātības integrēšanai ikdienā.</h3>
-            <p class="text-gray-700 mb-6 grow">
-              Apzinātības (Mindfulness) prakses integrēšana psihoterapijā piedāvā fundamentāli jaunu veidu, kā
-              attiekties pret savām grūtībām, mācoties vērot domas un emocijas kā mākoņus, neļaujot tiem noteikt mūsu
-              realitāti.
-            </p>
-            <a href="article.html" class="text-red-900 font-bold hover:text-red-700">Lasīt vairāk..</a>
-          </div>
-
-        </div>
-        <div class="flex py-16">
-          <a href="#"
-             class="block ml-auto text-center outline-1 outline-gray-400 font-bold py-3 px-8 rounded-lg hover:bg-white hover:outline-0 transition">Lasīt
-            vairāk rakstus</a>
-        </div>
-      </div>
-    </section>
-    <section class="bg-stone-300 mx-auto px-4 pb-16 >
-      <div class=" container mx-auto px-4">
-      <div class="flex flex-wrap justify-center text-center mb-24">
-        <div class="w-full lg:w-6/12 px-4">
-          <hr class="pt-20">
-          <h2 class="text-3xl md:text-5xl font-serif">Terapija</h2>
-          <p class="copy md:text-xl leading-relaxed mt-8 m-4">
-            Having the richest soil means best possible harvest results. Our peat is the perfect way to give your
-            plants the healthy soil they need for success.
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-wrap">
-        <img src="../assets/body_work_bg.png" class="w-full object-cover" alt="">
-      </div>
-      </div>
-
-    </section>
-
-    <section class="pt-28 md:pb-20 hidden">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-wrap justify-center text-center mb-24">
-          <div class="w-full lg:w-6/12 px-4">
-            <h2 class="text-3xl md:text-5xl font-serif">What is saved that is earned</h2>
-            <p class="md:text-xl leading-relaxed m-4 font-serif">
-              Our end goal is that you grow richer through better harvest. <br>
-              We understand your priorities, which is why we offer a streamlined process from peat production land to
-              your farm. </p>
-          </div>
-        </div>
-        <div class="flex flex-wrap justify-center">
-          <div class="feature w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-20 md:mb-12 px-4">
-            <div class="px-10">
-              <img
-                   alt="..."
-                   src="../assets/icon_fastest_delivery.svg"
-                   class="shadow-lg rounded-full max-w-full mx-auto"
-                   style="max-width: 115px;" />
-              <div class="pt-6 text-center">
-                <h5 class="text-2xl text-pr-green-accent">Fastest delivery</h5>
-                <p class="mt-1 leading-tight">
-                  Straight from peat
-                  production land & safely
-                  packed to be sent
-                  of to your farm.
-                </p>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">Eksistenciālā psihoterapija piedāvā atšķirīgu pieeju.
+              Tā necenšas sniegt gatavas atbildes, bet gan palīdz indivīdam saskarties ar četrām galvenajām eksistences
+              dotībām: nāve, brīvība, izolācija un bezjēdzība. Sākumā šīs tēmas var šķist drūmas, taču tieši to
+              apzināšanās un pieņemšana ļauj mums pilnībā apzināties savu dzīvi un tās vērtību. Nāves apziņa liek mums
+              novērtēt katru mirkli, brīvība uzliek atbildību par savām izvēlēm, izolācija māca meklēt patiesu saikni ar
+              citiem, un bezjēdzība mudina radīt savu personīgo jēgu.</p>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">Jēgas radīšana nav vienreizējs akts, bet gan
+              nepārtraukts process. Tas ietver apzinātu izvēli, darbību un vērtību definēšanu. Tas var būt saistīts ar
+              radošumu, attiecībām, palīdzību citiem vai pat vienkārši ar spēju novērtēt skaistumu un pieredzi, kas mūs
+              ieskauj. Svarīgi ir apzināties, ka jēga nav kaut kas, ko mēs atklājam, bet gan kaut kas, ko mēs aktīvi
+              veidojam, balstoties uz savām vērtībām un pasaules uztveri.</p>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">Tomēr šis ceļš nav viegls. Bieži vien ir jāpārvar
+              bailes no brīvības, no izvēlēm, no atbildības un no saskarsmes ar pašu tukšumu. Psihoterapeita uzdevums ir
+              pavadīt cilvēku šajā ceļā, palīdzot viņam izpētīt savas bažas, apzināties savus resursus un atrast drosmi
+              stāties pretī dzīves izaicinošajām pusēm. Tas nav par to, kā atrast "pareizo" jēgu, bet gan par to, kā
+              atrast savu jēgu, kas rezonē ar paša būtību.</p>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">Galu galā, nejaušības pilnā pasaule nenozīmē
+              bezjēdzīgu pasauli. Tieši pretēji, tā piedāvā milzīgu audeklu, uz kura mēs varam gleznot savu stāstu.
+              Pieņemot šo nejaušību un brīvību, mēs atklājam, ka spēks radīt jēgu atrodas mūsos pašos. Tas ir aicinājums
+              dzīvot autentiski, ar apziņu un ar drosmi veidot savu likteni, pat ja ceļš nav iepriekš izplānots vai
+              garantēts.</p>
+            <br><br>
+            <div id="social-share" class="flex flex-col items-center justify-center py-8">
+              <h4 class="text-sm font-serif mb-6 text-gray-500">Dalīties ar šo rakstu</h4>
+              <div class="flex gap-6">
+                <a href="#" class="text-gray-700 hover:text-blue-600 transition">
+                  <i class="fab fa-facebook text-3xl"></i>
+                </a>
+                <a href="#" class="text-gray-700 hover:text-pink-600 transition">
+                  <i class="fab fa-instagram text-3xl"></i>
+                </a>
+                <a href="#" class="text-gray-700 hover:text-blue-400 transition">
+                  <i class="fab fa-twitter text-3xl"></i>
+                </a>
               </div>
             </div>
-          </div>
-          <div class="feature w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-20 md:mb-12 px-4">
-            <div class="px-10">
-              <img
-                   alt="..."
-                   src="../assets/icon_best_price.svg"
-                   class="shadow-lg rounded-full max-w-full mx-auto"
-                   style="max-width: 115px;" />
-              <div class="pt-6 text-center">
-                <h5 class="text-2xl text-pr-green-accent">Best price</h5>
-                <p class="mt-1">
-                  Flexible package volume
-                  offer with the best
-                  possible price & value in
-                  market with no middle man.
-                </p>
-              </div>
+            <div id="leave-comment" class="flex flex-col items-center justify-center py-12 px-4">
+              <h4 class="text-2xl font-serif mb-8">Pievienot komentāru</h4>
+              <form class="w-full max-w-2xl">
+                <div class="mb-6">
+                  <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Vārds</label>
+                  <input type="text" id="name" name="name" required
+                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-500 transition">
+                </div>
+                <div class="mb-6">
+                  <label for="comment" class="block text-gray-700 text-sm font-bold mb-2">Komentārs</label>
+                  <textarea id="comment" name="comment" rows="6" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-500 transition resize-none"></textarea>
+                </div>
+                <div class="flex justify-center">
+                  <button type="submit"
+                          class="bg-gray-800 text-white font-bold py-3 px-8 rounded-lg hover:bg-gray-700 transition">Submit</button>
+                </div>
+              </form>
             </div>
-          </div>
-          <div class="feature w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-20 md:mb-12 px-4">
-            <div class="px-10">
-              <img
-                   alt="..."
-                   src="../assets/icon_biggest_savings.svg"
-                   class="shadow-lg rounded-full max-w-full mx-auto"
-                   style="max-width: 115px;" />
-              <div class="pt-6 text-center">
-                <h5 class="text-2xl text-pr-green-accent">Biggest savings</h5>
-                <p class="mt-1">
-                  In result - biggest saving
-                  deal & highest quality
-                  products that won't tbreak the bank.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact-us" class="relative block py-20 bg-zinc-700">
-      <div class="container mx-auto px-2">
-        <div class="flex flex-wrap justify-center">
-          <div class="w-full lg:w-7/12 px-2">
-            <h2 class="text-3xl md:text-5xl font-serif  text-center mb-8 text-orange-100">Kontakti</h2>
-
-            <form id="prosper-form" action="https://formspree.io/f/xrgvwggg" method="POST">
-
-              <div
-                   class="relative flex flex-col min-w-0 wrap-break-word w-full mb-6 shadow-lg rounded-xl border-solid border border-orange-100">
-                <div class="flex-auto p-5 lg:p-10">
-
-                  <div class="relative w-full mb-3">
-                    <input
-                           type="email"
-                           id="email"
-                           name="email"
-                           class="border-0 px-3 py-3 placeholder-white placeholder-opacity-25 text-orange-100 bg-transparent focus:outline-none focus:ring-opacity-0 w-full"
-                           placeholder="example@email.com"
-                           style="transition: all 0.15s ease 0s;" />
+            <div id="comments" class="flex flex-col items-center py-12 px-4">
+              <div class="w-full max-w-2xl space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow">
+                  <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-gray-400 rounded-full mr-4"></div>
+                    <div>
+                      <h5 class="font-bold text-gray-800">Anna Bērziņa</h5>
+                      <p class="text-sm text-gray-500">December 12, 2025</p>
+                    </div>
                   </div>
-                  <div class="relative w-full mb-3">
-                    <textarea
-                              required
-                              id="message"
-                              name="message"
-                              rows="8"
-                              cols="80"
-                              class="px-3 py-3 border-0 border-t border-solid border-orange-100 placeholder-white placeholder-opacity-25 text-orange-100 bg-transparent focus:outline-none focus:ring-opacity-0 w-full"
-                              placeholder="Hello, I am interested in prospering."></textarea>
+                  <p class="text-gray-700 leading-relaxed">
+                    Paldies par šo brīnišķīgo rakstu! Man īpaši patika Jūsu pieeja tukšuma izpratnei kā iespējai, nevis
+                    trūkumam. Tas liek domāt par daudzām lietām savā dzīvē.
+                  </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                  <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-gray-400 rounded-full mr-4"></div>
+                    <div>
+                      <h5 class="font-bold text-gray-800">Jānis Kalniņš</h5>
+                      <p class="text-sm text-gray-500">December 13, 2025</p>
+                    </div>
                   </div>
+                  <p class="text-gray-700 leading-relaxed">
+                    Ļoti dziļš un pārdomāts raksts. Eksistenciālā psihoterapija tiešām piedāvā unikālu skatījumu uz
+                    dzīves
+                    jēgu. Vai būtu iespējams uzzināt vairāk par praktiskiem soļiem, kā sākt šo jēgas meklēšanas ceļu?
+                  </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                  <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-gray-400 rounded-full mr-4"></div>
+                    <div>
+                      <h5 class="font-bold text-gray-800">Līga Ozola</h5>
+                      <p class="text-sm text-gray-500">December 14, 2025</p>
+                    </div>
+                  </div>
+                  <p class="text-gray-700 leading-relaxed">
+                    Brīnišķīgi formulēts! Ideja par to, ka mēs paši radām savu jēgu, nevis atklājam to, ir ļoti spēcīga.
+                    Tas
+                    dod cerību un motivāciju turpināt meklēt savu ceļu.
+                  </p>
                 </div>
               </div>
-              <div class="text-center mt-6">
-                <input required type="submit" value="Nosūtīt Ziņu" ref="submit"
-                       class="button-submit text-orange-100 active:bg-pr-green-accent font-bold w-48 py-3 rounded-xl hover:shadow-lg outline-none border border-solid border-pr-green-accent focus:outline-none focus:ring-opacity-0 mr-1 mb-1"
-                       type="button"
-                       style="transition: all 0.15s ease 0s;">
-
-              </div>
-
-            </form>
-
-            <p id="my-form-status" class="text-lg text-orange-100 w-full text-center h-20 mt-10"></p>
-
+            </div>
           </div>
+
         </div>
       </div>
     </section>
+
   </main>
   <footer class="relative bg-zinc-700 pt-8 pb-6">
     <div class="container mx-auto px-4">

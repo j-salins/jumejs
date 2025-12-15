@@ -6,9 +6,9 @@
   "scripts": {
     "build": "postcss src/style.css -o src/index.css --env production && npm run copy",
     "serve": "npm run build && npm-run-all --parallel watch:styles serve:dev",
-    "watch:styles": "nodemon --watch src/style.css --watch src/index.html --exec \"npm run build\"",
-    "serve:dev": "browser-sync start --server 'src' --files 'src/index.css, src/index.html'",
-    "copy": "cp -r ./src/index.html ./dist/index.html && cp -r ./src/index.css ./dist/index.css && cp -r ./src/assets ./dist",
+    "watch:styles": "nodemon --watch src/style.css --watch src/index.html --watch src/article.html --exec \"npm run build\"",
+    "serve:dev": "browser-sync start --server 'src' --files 'src/index.css, src/index.html, src/article.html'",
+    "copy": "cp -r ./src/index.html ./dist/index.html && cp -r ./src/index.html ./dist/article.html && cp -r ./src/app.js ./dist/app.js && cp -r ./src/index.css ./dist/index.css && cp -r ./src/assets ./dist",
     "deploy": "gh-pages -d dist"
   },
   "author": "",
